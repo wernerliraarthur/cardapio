@@ -5,11 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="css/estilos.css">
+    <script src="javaScript/myScript.js"></script>
     <title>Cardapio</title>
 </head>
 
 <body>
+
+    <section>
+        <div class="acessibilidade">
+            <a href="#">
+                <button type="button" title="Ir para topo">Ir para topo</button>
+            </a>
+            <button type="button" onclick="meio()" title="Ir para Conteudo">Ir para Conteudo</button>
+            <button type="button" onclick="fim()" title="Ir para rodapé">Ir para rodapé</button>
+            <div class="contraste">
+                <button type="button" onclick="normal()" title="contraste normal">contraste normal</button>
+                <button type="button" onclick="branco()" title="contraste Branco">contraste Branco</button>
+                <button type="button" onclick="preto()" title="contraste Preto">contraste Preto</button>
+                <button type="button" onclick="azul()" title="contraste Azul">contraste Azul</button>
+            </div>
+        </div>
+    </section>
+
     <nav>
         <a href="index.html">
             <img src="img/logo.png" alt="logo Cardapio">
@@ -51,30 +70,28 @@
     </header>
 
     <main>
-        <div class="container clearfix">
-            <div class="pizzas">
-                <div class="col-4">
-                    <h2>Portuguesa</h2>
-                    <img src="img/portuguesa.jpg" alt="">
-                    <a href="index.html">
-                        <button type="button">Adicionar ao Pedido</button>
-                    </a>
-                </div>
-                <div class="col-4">
-                    <h2>Muçarela</h2>
-                    <img src="img/pizza-mussarela.webp" alt="">
-                    <a href="index.html">
-                        <button type="button">Adicionar ao Pedido</button>
-                    </a>
-                </div>
+        <div class="container clearfix pizzas">
+            <div class="col-4">
+                <h2>Portuguesa</h2>
+                <img src="img/portuguesa.jpg" alt="portuguesa">
+                <a href="index.html">
+                    <button type="button">Adicionar ao Pedido</button>
+                </a>
+            </div>
+            <div class="col-4">
+                <h2>Muçarela</h2>
+                <img src="img/pizza-mussarela.webp" alt="mussarela">
+                <a href="index.html">
+                    <button type="button">Adicionar ao Pedido</button>
+                </a>
+            </div>
 
-                <div class="col-4">
-                    <h2>Napolitana</h2>
-                    <img src="img/napolitana.jpg" alt="">
-                    <a href="index.html">
-                        <button type="button">Adicionar ao Pedido</button>
-                    </a>
-                </div>
+            <div class="col-4">
+                <h2>Napolitana</h2>
+                <img src="img/napolitana.jpg" alt="napolitana">
+                <a href="index.html">
+                    <button type="button">Adicionar ao Pedido</button>
+                </a>
             </div>
         </div>
     </main>
